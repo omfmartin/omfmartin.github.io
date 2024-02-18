@@ -12,36 +12,34 @@ Every year, artificial intelligence (AI) and machine learning models become more
 
  <figure> <img style="margin: auto;" src="increasing_number_of_parameters.png" alt="The increasing number of AI model parameters between 1954 and 2024."> <figcaption>The increase in the number of model parameters between 1954 and 2024. Data from <a href="https://towardsdatascience.com/parameter-counts-in-machine-learning-a312dc4753d0">Jaime Sevilla</a>.</figcaption> </figure>
 
-This is where eXplainable AI (XAI) enters the scene. XAI seeks to open black boxes, providing insights into how and why algorithms make their predictions. By allowing us to explore how data inputs influence model outputs, XAI makes AI more transparent, fosters trust, and enables both developers and end-users to gain insights into the model's reasoning process.
+This is where eXplainable AI (XAI) enters the scene. XAI seeks to open black boxes, providing insights into how and why algorithms make their predictions. By allowing us to explore how data inputs influence model outputs, XAI makes AI more transparent, fosters trust and enables both developers and end-users to understand the model's reasoning.
 
-This blog post offers a short introduction to XAI, highlighting its importance and the methodologies involved. For those seeking a deeper dive into the subject, the resources section at the end of this post offers a selection of insightful books and software tools dedicated to XAI.
+This blog post offers a short introduction to XAI, highlighting its importance and the methodologies involved. For those seeking a deeper dive into the subject, the resources section at the end of this post offers a selection of books and software tools dedicated to XAI.
 
 ## Use Cases for Opening the Black Box
 
 ![A person stands in a dimly lit room, their silhouette outlined by the soft glow emanating from an open, mysterious black box they hold in their hands.](opening_the_black_box.webp)
 ### Debugging and Improving Models
 
-Predictive models make mistakes. Understanding the root causes that lead to these inaccuracies is essential for enhancing model performance. By helping us understand the rationale behind predictions, XAI techniques help us characterize the situations where the model is making mistakes. This makes them a valuable tool for model debugging and contributes to model refinement.
+Predictive models make mistakes. Understanding the root causes that lead to these inaccuracies is essential for enhancing model performance. By helping us understand the rationale behind predictions, XAI techniques help us characterize the situations where the model is making errors. This makes XAI a valuable tool for model debugging and contributes to model refinement.
 
-Consider a scenario involving an animal classification task. XAI techniques, such as saliency maps, can highlight the parts of an image that the classifier considers significant for making a prediction. This analysis might reveal that, in the case of a camel image, the model erroneously concentrates on the sand rather than the camel itself. This would help explain why the model is unable to accurately classify animals in other environments. To fix this, one solution would be to expand the dataset to include images of other animals in the desert.
-
-<img style="margin: auto;" src="camel_saliency.png" alt="Saliency shows that the classifier is focusing on the sand and not on the camel.">
+Consider a scenario involving an animal classification task. XAI techniques, such as [saliency maps](https://en.wikipedia.org/wiki/Saliency_map), can highlight the parts of an image that the classifier considers significant for making a prediction. This analysis might reveal that, in the case of a camel image, the model erroneously concentrates on the sand rather than the camel itself. This would help explain why the model is unable to accurately classify images of camels in other environments.
 
 ### Bias Detection and Mitigation
 
-Predictive models can be biased, leading to social inequalities and harming minority groups. Biases usually come from using skewed or incomplete data or from the models' built-in assumptions.
+Predictive models can be biased, leading to social inequalities and harming minority groups. Algorithmic biases usually come from using skewed or incomplete data, or from the models' built-in assumptions.
 
-A notable example of such bias was observed in a commercial [algorithm used by the US healthcare system](https://www.science.org/doi/10.1126/science.aax2342#supplementary-materials). Specifically, for identical predicted risk scores, Black patients were found to be sicker than their White counterparts. This bias came from the model assuming that higher healthcare costs mean greater healthcare needs. Since less money was spent on the Black population, the algorithm erroneously concluded they were less at risk. 
+A notable example of such bias was observed in a commercial [algorithm used by the US healthcare system](https://www.science.org/doi/10.1126/science.aax2342#supplementary-materials). Specifically, for identical predicted risk scores, Black patients were found to be sicker than their White counterparts. This bias came from the model assuming that higher healthcare costs meant greater healthcare needs. Since less money was spent on the Black population, the algorithm erroneously concluded they were less at risk. 
 
 Similar instances of algorithmic bias have been documented in the [judicial system](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm) and [job application processes](https://www.bbc.com/news/technology-45809919). These examples highlight the need for accountability in AI systems, especially when deployed in areas with significant societal impacts.
 
-XAI techniques can help identify such biases by contextualizing why models make certain predictions. For instance, in the previously mentioned healthcare example, XAI could demonstrate how being Black lowers the risk score. Therefore, XAI is instrumental not only in interpreting model predictions but also in driving the development of more equitable AI systems.
+XAI techniques can help identify such biases by contextualizing why models make certain predictions. For instance, in the previously mentioned healthcare example, XAI could demonstrate how being Black lowered the risk score. Therefore, XAI is instrumental not only in interpreting model predictions but also in driving the development of more equitable AI systems.
  
 ## High Stake Scenarios
 
-Erroneous or biased predictions can profoundly impact individuals' lives and well-being, particularly when used in high-risk scenarios. These are for example algorithms used for social scoring systems, individual categorization, facial recognition technologies, law enforcement tools, employment screening processes, and the provision of essential services like healthcare.
+Erroneous or biased predictions can profoundly impact individuals' lives and well-being, particularly when used in high-risk scenarios. For instance, when using predictive algorithms for social scoring systems, individual categorization, facial recognition technologies, law enforcement tools, employment screening processes, and the provision of essential services like healthcare.
 
-Therefore, understanding the algorithmic decision-making process extends beyond mere academic interest. In practical applications, the explanation can be as important as the prediction itself. For this reason, in high-stakes sectors such as healthcare, finance, and criminal justice, there is a marked preference for employing straightforward and inherently interpretable models. For example, logistic regression, with its interpretability and simplicity, is often preferred over more complex neural networks within healthcare settings.
+In practical applications, the explanation can be as important as the prediction itself. For this reason, in high-stakes sectors such as healthcare, finance, and criminal justice, there is a marked preference for employing inherently interpretable models. For example, logistic regression, with its interpretability and simplicity, is often preferred over more complex neural networks within healthcare settings.
 
 ### Regulatory Compliance
 
@@ -49,11 +47,11 @@ As the deployment of AI becomes more widespread, laws and regulations are starti
 
 For instance, the European Union's General Data Protection Regulation (GDPR) mandates significant transparency about the logic involved in automated decisions, particularly in decisions that significantly affect individuals, such as those related to employment, creditworthiness, and legal matters. This regulation has been interpreted by some as a _right to explanation_. Building on this foundation, the more recent AI Act has introduced specific provisions for "high-risk" algorithms, with requirements related to "transparency and provision of information to users". 
 
-However, these regulations face challenges in enforcement and interpretation. The inherent complexity of AI algorithms can make it challenging to provide explanations that are both technically accurate and easily understandable to the general public. Despite these challenges, the push for such regulations highlights the growing concern for transparency in AI applications and underscores the critical need for Explainable AI (XAI).
+However, these regulations face challenges in enforcement and interpretation. The inherent complexity of AI algorithms can make it challenging to provide explanations that are both technically accurate and easily understandable to the general public. Despite these challenges, the push for such regulations highlights the growing concern for transparency in AI applications and underscores the critical need for XAI.
 
 ### Knowledge Discovery
 
-Using XAI for generating new knowledge is probably the most overlooked application. This capability is particularly interesting given that machine learning models are more apt at identifying complex patterns and trends in data compared to traditional statistical tests such as t-tests or chi-squared tests. This approach can be used for biomarker discovery. The explanation can allow to order of the most interesting candidate biomarker that predicts specific biological or health conditions.
+Using XAI for generating new knowledge is probably the most overlooked application. This capability is particularly interesting given that machine learning models are more apt at identifying complex patterns and trends in data compared to traditional statistical tests such as t-tests or chi-squared tests. This approach was suggested for [biomarker discovery](https://doi.org/10.1007/s00441-023-03816-z).
 
 Despite its potential, employing XAI for knowledge generation is not without challenges. Some of the most significant issues include:
 
@@ -63,21 +61,19 @@ Despite its potential, employing XAI for knowledge generation is not without cha
 
 ### When We Can Away Without an Explanation
 
-Not all predictions made by AI should be explained. Generating explanations introduces additional software complexity and computational needs, which translate to financial expenses, and environmental impact. Explainable AI may be unjustified in certain scenarios, such as:
+Not all predictions made by AI should be explained. Generating explanations introduces additional software complexity and computational needs, which translate to financial expenses, and environmental impact. Implementing XAI may be unjustified in certain scenarios, such as:
 
-- **Low-Stakes Scenarios**: In situations where the consequences of errors are minimal, such as recommendations on a streaming platform, users typically have little interest in understanding the inner workings of how these suggestions are generated.
+- **Low-Stakes Scenarios**: In situations where the consequences of errors are minimal, such as recommendations on a streaming platform. Users typically have little interest in understanding the inner workings of how these suggestions are generated.
 - **Well-Understood Problems**: For well-established problems like spam filtering in email systems, the explanations for each decision may not be essential because the overall reliability and accuracy of the system are already well understood.
 - **Risks of Manipulation**: In some cases, providing detailed explanations can unintentionally aid those seeking to exploit the system. For instance, SEO experts might misuse in-depth information about search algorithms to manipulate rankings and undermine the system's integrity.
 
 ## Approaches to Explainaing AI
 
-Interpretability and explainability are distinguished in the context of AI. Interpretability refers to the degree to which one can understand the underlying algorithm. Explainability, on the other hand, pertains to the ability to understand how the algorithm arrived at a particular result.
+The intricate mathematical details and computations of an algorithm usually don't reveal much about how it makes decisions. This is because the representations learned by the predictive model are typically beyond the human brain's capacity to understand. Because of this, direct approaches, such as disclosing source code or mathematical computations, fall short of providing understanding.
 
-The intricate mathematical details and computations of an algorithm usually don't reveal much about how it makes decisions. This is because the representations learned by the predictive model are typically beyond the human brain's capacity to understand. As such, direction approaches, such as disclosing source code or mathematical computations, fall short of providing understanding.
+To overcome this challenge, XAI techniques either use inherently interpretable models or approximate complex, black-box models with simpler, more understandable ones. XAI is an active field of research. Currently, there is no universal way to explain complex predictive algorithms, and there might never be one.
 
-To overcome these challenges, XAI techniques either use inherently interpretable models or approximate complex, black-box models with simpler, more understandable ones. XAI is an active field of research. Currently, there's no universal way to explain complex predictive algorithms, and there might never be one. This is because algorithms vary widely and are used in different contexts.
-
-Our focus will be on categorizing the techniques used to explain predictive models, highlighting some of the most commonly employed methods. For those interested in the subject, further reading is recommended.
+Our focus will be on categorizing the techniques used to explain predictive models, highlighting some of the most commonly employed methods.
 
 ![An abstract visual representation of a classification of XAI techniques](classification_of_xai.webp)
 
@@ -96,7 +92,7 @@ Our focus will be on categorizing the techniques used to explain predictive mode
 
 - **Local Explanations**: These are focused on individual predictions or decisions, providing insights into why the model made a particular choice for a specific instance. Tools like SHAP and LIME offer local explanations and show the influence of various features on a single outcome.
     
-- **Global Explanations**: In contrast, global explanations seek to illuminate the model's behavior across the entire dataset or in a more general sense. Techniques for achieving global explanations include feature importance rankings and partial dependence plots, which aggregate the effects of features across multiple instances to offer a broader understanding of the model's logic.
+- **Global Explanations**: In contrast, global explanations seek to show the model's behavior across the entire dataset or in a more general sense. Techniques for achieving global explanations include feature importance rankings and partial dependence plots, which aggregate the effects of features across multiple instances to offer a broader understanding of the model's logic.
 
 ## The Limitations of XAI
 
@@ -113,7 +109,7 @@ Indeed, evidence shows that models with fewer parameters, such as Mistral-7B, ca
 
 ### Explaining the Explanation 
 
-For effective implementation of XAI techniques, it is crucial to understand who is the target audience for the explanations. XAI primarily serves technical professionals, such as data scientists and machine learning engineers, who have a deep understanding of AI systems.
+For effective implementation of XAI techniques, it is crucial to understand who is the target audience for the explanations. XAI primarily serves technical professionals, such as data scientists and machine learning engineers, who have a deep understanding of statistics.
 
 However, a significant distinction exists between explanations suitable for AI experts and those for non-technical users. Technical details can overwhelm non-technical users, leading to confusion or misinterpretation. For example, someone with limited knowledge of statistics might mistakenly interpret SHAP values as indicating causality, rather than merely correlation.
 
@@ -121,7 +117,7 @@ Acknowledging the end-user's knowledge, goals, skills, and abilities is paramoun
 
 ### Faithfulness and the Limits of Explanation
 
-Post-hoc explanations of complex models are achieved by locally approximating their behavior around a specific data point using a simpler, transparent model. While these approximations offer insights, they fall short of fully capturing the original model's behavior. Furthermore, XAI methods often lack metrics to evaluate the quality of these approximations, raising questions about the reliability of such explanations.
+Post-hoc explanations of complex models are achieved by locally approximating their behavior around a specific data point using a simpler, transparent model. While these approximations offer insights, they fall short of fully capturing the original model's behavior. Furthermore, XAI methods often lack metrics to evaluate the quality of these approximations, raising questions about the faithfulness of such explanations.
 
 Additionally, as the complexity of models increases annually, our ability to explain them with accuracy diminishes. This escalating complexity highlights a crucial question: Is there a theoretical limit to our capacity to make AI's decision-making processes transparent? And if such a limit exists, how close are we to reaching it?
 
@@ -160,8 +156,6 @@ XAI plays a critical role in addressing the opacity of complex machine learning 
 - [Linardatos et al. Explainable AI: A Review of Machine Learning Interpretability Methods. (2020)](https://doi.org/10.3390/e23010018)
 
 - [Lungberg and Lee. A Unified Approach to Interpreting Model Predictions. (2017)](https://doi.org/10.48550/arXiv.1705.07874)
-
-- [McCoy et al. Believing in black boxes: machine learning for healthcare does not need explainability to be evidence-based. (2022)](https://doi.org/10.1016/j.jclinepi.2021.11.001)
 
 - [Ng et al. The benefits and pitfalls of machine learning for biomarker discovery. (2023)](https://doi.org/10.1007/s00441-023-03816-z)
 
