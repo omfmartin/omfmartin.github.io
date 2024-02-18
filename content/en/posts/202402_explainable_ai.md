@@ -4,6 +4,7 @@ url: "/2024-02-explainable-ai"
 summary: ""
 ---
 
+
 ## What is Explainable AI?
 
 Imagine being denied a loan. This was not because of your credit score or financial history, but because an algorithm deemed you unfit, without any clear explanation. This is not a scene from a dystopian novel; this is a real possibility in today's world where AI systems, from financial services to healthcare, make decisions affecting millions of lives. 
@@ -18,7 +19,7 @@ This blog post offers a short introduction to XAI, highlighting its importance a
 
 ## Use Cases for Opening the Black Box
 
-![A person stands in a dimly lit room, their silhouette outlined by the soft glow emanating from an open, mysterious black box they hold in their hands.](opening_the_black_box.webp)
+![A person stands in a dimly lit room, their silhouette outlined by the soft glow emanating from an open, mysterious black box they hold in their hands.](opening_the_black_box.png)
 ### Debugging and Improving Models
 
 Predictive models make mistakes. Understanding the root causes that lead to these inaccuracies is essential for enhancing model performance. By helping us understand the rationale behind predictions, XAI techniques help us characterize the situations where the model is making errors. This makes XAI a valuable tool for model debugging and contributes to model refinement.
@@ -59,7 +60,7 @@ Despite its potential, employing XAI for knowledge generation is not without cha
 - **Observational Data Limitations**: The majority of data used in machine learning is observational, which is inherently less effective at establishing causal relationships.
 - **Overfitting**: There exists a risk of models mistaking random noise for significant patterns, potentially leading to incorrect interpretations and conclusions regarding the data.
 
-### When We Can Away Without an Explanation
+### When Can We Get Away Without an Explanation?
 
 Not all predictions made by AI should be explained. Generating explanations introduces additional software complexity and computational needs, which translate to financial expenses, and environmental impact. Implementing XAI may be unjustified in certain scenarios, such as:
 
@@ -75,7 +76,7 @@ To overcome this challenge, XAI techniques either use inherently interpretable m
 
 Our focus will be on categorizing the techniques used to explain predictive models, highlighting some of the most commonly employed methods.
 
-![An abstract visual representation of a classification of XAI techniques](classification_of_xai.webp)
+![An abstract visual representation of a classification of XAI techniques.](classification_of_xai.png)
 
 ### Stage: Ante-hoc vs Post-hoc
 
@@ -98,7 +99,7 @@ Our focus will be on categorizing the techniques used to explain predictive mode
 
 As AI continues to permeate various aspects of our lives, the imperative for transparency and understandability in AI systems has never been more pronounced. Yet, as with any rapidly evolving domain, XAI is not without its challenges and limitations.
 
-![The image depicts a person sitting in front of a massive, complex machine, composed of countless gears, levers, and screens, symbolizing a complex AI](complex_ai.webp)
+![The image depicts a person sitting in front of a massive, complex machine, composed of countless gears, levers, and screens, symbolizing a complex AI.](complex_ai.png)
 ### The complexity-performance tradeoff
 
 The complexity-performance tradeoff suggests that enhancing AI model performance typically requires increasing their complexity. This assumption underlines the perceived necessity of balancing complexity against performance. This perspective, however, merits critical examination. The [lottery ticket hypothesis](https://doi.org/10.48550/arXiv.1803.03635) proposes that the efficacy of large models might stem from optimal parameter initialization rather than sheer size. Empirically, simpler models can be shown to achieve comparable performance to their more complex counterparts. 
