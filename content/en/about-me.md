@@ -1,7 +1,7 @@
 ---
-title: "About Me" # in any language you want
+title: "About Me"
 url: "/about-me"
-summary: "About-Me"
+summary: "About Me"
 ---
 
 ```python

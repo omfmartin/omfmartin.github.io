@@ -1,5 +1,6 @@
 baseURL: https://omfmartin.com
 title: Olivier MF Martin
+description: Olivier's data science blog and personal website. 
 theme: PaperMod
 paginate: 10
 
@@ -85,7 +86,7 @@ languages:
           weight: 3
 
 params:
-  description: "Data Science Blog"
+  description: "Olivier's Data Science Blog"
   author: "Olivier MF Martin"
   favicon: "/favicon.ico"
 

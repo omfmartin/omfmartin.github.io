@@ -1,7 +1,8 @@
 ---
 title: "A Quick Guide to Explainable AI"
 url: "/2024-02-explainable-ai"
-summary: ""
+summary: "Opening AI's black box to understand how algorithms reason and foster trust."
+date: 2024-02-18
 ---
 
 
