@@ -1,8 +1,8 @@
 ---
 title: "Beyond the Illusion: Understanding and Mitigating LLM Hallucinations"
-url: "/2024-03-llm-hallucination"
+url: "/posts/2024-03-24-llm-hallucination"
 summary: "How can we detect and mitigate hallucinations for safer LLM deployment?"
-date: 2024-03-23
+date: 2024-03-24
 ---
 
 **Large Language Models (LLMs) make stuff up**. Occasionally, these models will generate content that, while seemingly entirely plausible, is fundamentally incorrect. This phenomenon is known as "hallucinations".
@@ -22,7 +22,7 @@ Hallucinations can be loosely defined as output that is **factually incorrect, u
 >>> **Prompt**: The capital of France is Paris. What is the capital of France?
 **Response**: The capital of France is Lyon.
 
-**Extrinsic hallucinations** occur when the model makes statements that cannot be verified or contradicted based on the provided information. The response might seem plausible and informed, but it's not based on the provided information or any verifiable source. For example:
+**Extrinsic hallucinations** occur when the model makes statements that cannot be verified or contradicted based on the provided information. For example:
 
 >>> **Prompt**: Describe the economic impact of renewable energy sources.
 **Response**: According to a 2045 report, renewable energy sources have led to the creation of 5 million new jobs worldwide.
@@ -41,7 +41,7 @@ Hallucinations in language models are thought to be unavoidable. They can occur 
 
 - **Exposure Bias**:  This issue arises from a discrepancy between how the model is trained and the model's actual use case. During training, the model learns to predict the next token relying on the previous correct sequence from the training data, a method known as "teacher forcing." However, during inference, the model relies on its outputs. This can lead to an accumulation of errors or snowball effect.
 - **Architectural Limitations**: Causal language models generate text by predicting the next token based solely on preceding tokens. This design limits the model's ability to fully grasp contextual nuances, which is believed to contribute to the generation of hallucinated content.
-- **Belief Misalignment**: LLMs typically undergo a two-stage training process. Initially, they are pretrained to acquire broad knowledge. Subsequently, they are fine-tuned to better align with specific user instructions or prompts, often using techniques like reinforcement learning. This fine-tuning might inadvertently lead the model to prioritize user preferences over accuracy.
+- **Belief Misalignment**: LLMs typically undergo a two-stage training process. Initially, they are pretrained to acquire broad knowledge. Subsequently, they are fine-tuned to better align with specific user instructions or prompts, often using techniques like [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning). This fine-tuning might inadvertently lead the model to prioritize user preferences over accuracy.
 
 ### Inference-Related Causes
 
@@ -57,7 +57,7 @@ One approach for hallucination detection is to employ **probabilistic metrics** 
 
 A more effective strategy has been the development of **model-based metrics**. This approach involves utilizing another language model, for example, a state-of-the-art LLM, to assess the likelihood of hallucinatory content. These metrics can be further classified into token-level and sentence-level metrics.
 
-**Token-level metrics** attempt to predict for each token if it hallucinated or not. To implement this strategy, researchers typically generate a synthetic hallucinated dataset by applying perturbations to reference datasets free of hallucinations. A binary language classifier, such as one based on [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)) or [XLNet](https://doi.org/10.48550/arXiv.1906.08237), is then trained to discern hallucinated tokens from non-hallucinated ones. Notable projects utilizing this approach are [HADES](https://github.com/microsoft/HaDes) and [fairseq-detect-hallucination](https://github.com/violet-zct/fairseq-detect-hallucination) hallucination detection pipeline.
+**Token-level metrics** attempt to predict for each token if it was hallucinated or not. To implement this strategy, researchers typically generate a synthetic hallucinated dataset by applying perturbations to reference datasets free of hallucinations. A binary language classifier, such as one based on [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)) or [XLNet](https://doi.org/10.48550/arXiv.1906.08237), is then trained to discern hallucinated tokens from non-hallucinated ones. Notable projects utilizing this approach are [HADES](https://github.com/microsoft/HaDes) and [fairseq-detect-hallucination](https://github.com/violet-zct/fairseq-detect-hallucination) hallucination detection pipeline.
 
 On the other hand, **sentence-level metrics** evaluate the entire sentence to determine the presence of hallucinations. A prominent method is [SelfCheckGPT](https://github.com/potsawee/selfcheckgpt), a sampling-based technique grounded in the assumption that hallucinations are more likely to occur when the model is uncertain. This method assesses self-consistency by comparing various sampled responses, using standard metrics such as N-gram matching or BERTScore, to estimate the probability of hallucinatory content. One strength of this method is that it does not require any external data, making it easily scalable. 
 
@@ -98,7 +98,7 @@ Furthermore, more advanced [prompt engineering](https://www.promptingguide.ai) t
 
 ### 3. Retrieval-based Approaches
 
-These approaches enhance the model's responses by incorporating external knowledge sources and context to the prompt. Probably the most known technique is **Retrieval Augmented Generation (RAG)**:. This approach encodes external documents as [sentence embedding](https://en.wikipedia.org/wiki/Sentence_embedding), usually using some transformer-based neural network such as [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)). The resulting embeddings are then stored in a [vector database](https://en.wikipedia.org/wiki/Vector_database), which can then be efficiently queried using the original prompt (or some variation). The retrieved sentences are then used to enrich the prompt. A popular framework is [FAISS](https://github.com/facebookresearch/faiss). The main drawback of these retrieval-based approaches is that they require maintaining a large and curated database of information.
+These approaches enhance the model's responses by incorporating external knowledge sources and context to the prompt. Probably the most known technique is **Retrieval Augmented Generation (RAG)**:. This approach encodes external documents as [sentence embedding](https://en.wikipedia.org/wiki/Sentence_embedding), usually using some transformer-based neural network such as [BERT](https://en.wikipedia.org/wiki/BERT_(language_model)). The resulting embeddings are then stored in a [vector database](https://en.wikipedia.org/wiki/Vector_database), which can then be efficiently queried using the original prompt (or some variation). The retrieved sentences are then used to enrich the prompt. A popular framework is [FAISS](https://github.com/facebookresearch/faiss). The main drawback of these retrieval-based approaches is that they require maintaining a large and curated database.
 
 ### 4. LLM Fine-tuning
 

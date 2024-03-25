@@ -12,5 +12,5 @@ class Moi
         self.ciudad_natal = "Clarmont d'Auvèrnhe"
         self.profesión = ["Científico de datos", "Bioinformático"]
         self.educación = ["PhD", "PharmD"]
-        self.idiomas = ["fr", "pt", "cat", "oc", "ru", "es", "en"]
+        self.idiomas = ["fr", "pt", "oc", "cat", "es", "ru", "en"]
 ```

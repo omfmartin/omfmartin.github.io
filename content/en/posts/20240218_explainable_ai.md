@@ -1,26 +1,30 @@
 ---
 title: "A Quick Guide to Explainable AI"
-url: "/2024-02-explainable-ai"
+url: "/posts/2024-02-18-explainable-ai"
 summary: "Opening AI's black box to understand how algorithms reason and foster trust."
 date: 2024-02-18
 ---
 
-
 ## What is Explainable AI?
-
-Imagine being denied a loan. This was not because of your credit score or financial history, but because an algorithm deemed you unfit, without any clear explanation. This is not a scene from a dystopian novel; this is a real possibility in today's world where AI systems, from financial services to healthcare, make decisions affecting millions of lives. 
 
 Every year, artificial intelligence (AI) and machine learning models become more complex, thanks to faster computers, quicker algorithms, and more data. Certain models are now composed of hundreds of billions of parameters. This complexity makes them hard if not impossible to understand. 
 
- <figure> <img style="margin: auto;" src="increasing_number_of_parameters.png" alt="The increasing number of AI model parameters between 1954 and 2024."> <figcaption>The increase in the number of model parameters between 1954 and 2024. Data from <a href="https://towardsdatascience.com/parameter-counts-in-machine-learning-a312dc4753d0">Jaime Sevilla</a>.</figcaption> </figure>
+ <figure>
+    <img style="margin: auto;" 
+        src="increasing_number_of_parameters.png" 
+        alt="The increasing number of AI model parameters between 1954 and 2024.">
+    <figcaption>The increase in the number of model parameters between 1954 and 2024. Data from <a href="https://towardsdatascience.com/parameter-counts-in-machine-learning-a312dc4753d0">Jaime Sevilla</a>.
+    </figcaption> 
+</figure>
 
 This is where eXplainable AI (XAI) enters the scene. XAI seeks to open black boxes, providing insights into how and why algorithms make their predictions. By allowing us to explore how data inputs influence model outputs, XAI makes AI more transparent, fosters trust and enables both developers and end-users to understand the model's reasoning.
 
-This blog post offers a short introduction to XAI, highlighting its importance and the methodologies involved. For those seeking a deeper dive into the subject, the resources section at the end of this post offers a selection of books and software tools dedicated to XAI.
+This article offers a short introduction to XAI, highlighting its importance and the methodologies involved. For those seeking a deeper dive into the subject, the resources section at the end of this post offers a selection of books and software tools dedicated to XAI.
 
 ## Use Cases for Opening the Black Box
 
 ![A person stands in a dimly lit room, their silhouette outlined by the soft glow emanating from an open, mysterious black box they hold in their hands.](opening_the_black_box.png)
+
 ### Debugging and Improving Models
 
 Predictive models make mistakes. Understanding the root causes that lead to these inaccuracies is essential for enhancing model performance. By helping us understand the rationale behind predictions, XAI techniques help us characterize the situations where the model is making errors. This makes XAI a valuable tool for model debugging and contributes to model refinement.
@@ -87,13 +91,11 @@ Our focus will be on categorizing the techniques used to explain predictive mode
 ### Model: Model-specific vs Model-agnostic
 
 - **Model-Specific**: These techniques are only applicable to specific types of models, exploiting their unique architectures to provide explanations. For deep learning models, techniques such as Saliency Maps, DeepLIFT, and Class Activation Maps (CAM) illustrate how different features influence the model's predictions.
-    
 - **Model-Agnostic**: Offering a flexible alternative, model-agnostic methods do not require knowledge of the model's internal workings, making them applicable across a wide range of AI systems. Techniques like [SHAP](https://doi.org/10.48550/arXiv.1705.07874) (SHapley Additive exPlanations) and [LIME](https://github.com/marcotcr/lime)) (Local Interpretable Model-agnostic Explanations) can be used to explain any model by approximating its decision boundary or output in an interpretable way.
 
 ### Scope: Global vs Local
 
 - **Local Explanations**: These are focused on individual predictions or decisions, providing insights into why the model made a particular choice for a specific instance. Tools like SHAP and LIME offer local explanations and show the influence of various features on a single outcome.
-    
 - **Global Explanations**: In contrast, global explanations seek to show the model's behavior across the entire dataset or in a more general sense. Techniques for achieving global explanations include feature importance rankings and partial dependence plots, which aggregate the effects of features across multiple instances to offer a broader understanding of the model's logic.
 
 ## The Limitations of XAI
@@ -101,6 +103,7 @@ Our focus will be on categorizing the techniques used to explain predictive mode
 As AI continues to permeate various aspects of our lives, the imperative for transparency and understandability in AI systems has never been more pronounced. Yet, as with any rapidly evolving domain, XAI is not without its challenges and limitations.
 
 ![The image depicts a person sitting in front of a massive, complex machine, composed of countless gears, levers, and screens, symbolizing a complex AI.](complex_ai.png)
+
 ### The complexity-performance tradeoff
 
 The complexity-performance tradeoff suggests that enhancing AI model performance typically requires increasing their complexity. This assumption underlines the perceived necessity of balancing complexity against performance. This perspective, however, merits critical examination. The [lottery ticket hypothesis](https://doi.org/10.48550/arXiv.1803.03635) proposes that the efficacy of large models might stem from optimal parameter initialization rather than sheer size. Empirically, simpler models can be shown to achieve comparable performance to their more complex counterparts. 
@@ -143,7 +146,6 @@ XAI plays a critical role in addressing the opacity of complex machine learning 
 - [InterpretML](https://interpret.ml/)
 
 ## Bibliography
-
 
 - [Ebers. Regulating Explainable AI in the European Union. An Overview of the Current Legal Framework(s). (2021)](https://dx.doi.org/10.2139/ssrn.3901732)
 
