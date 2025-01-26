@@ -1,0 +1,138 @@
+baseURL: https://omfmartin.com
+title: Olivier MF Martin
+description: Olivier MF Martin 
+theme: PaperMod
+paginate: 10
+
+defaultContentLanguage: en
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 1
+    DateFormat: "January 2, 2006"
+    profileMode:
+      enabled: true
+      title: "Olivier MF Martin"
+      subtitle: "Data Scientist | Bioinformatian"
+      imageUrl: "cat.jpeg"
+      imageTitle: "profile picture"
+      imageWidth: 120
+      imageHeight: 120
+      buttons:
+        - name: About Me
+          url: "/about-me"   
+    menu:
+      main:
+        - identifier: about
+          name: About Me
+          url: /about-me
+          weight: 1
+        # - identifier: search
+        #   name: Search
+        #   url: /search
+        #   weight: 2
+  es:
+    contentDir: content/es
+    languageName: Español
+    weight: 2
+    DateFormat: "02/01/2006"
+    profileMode:
+      enabled: true
+      title: "Olivier MF Martin"
+      subtitle: "Científico de Datos | Bioinformático"
+      imageUrl: "cat.jpeg"
+      imageTitle: "profile picture"
+      imageWidth: 120
+      imageHeight: 120
+      buttons:
+        - name: Sobre Mí
+          url: "/es/sobre-mi"
+    menu:
+      main:
+        - identifier: about
+          name: Sobre Mí
+          url: /es/sobre-mi
+          weight: 1
+        # - identifier: search
+        #   name: Buscador
+        #   url: /es/buscador
+        #   weight: 2
+
+params:
+  description: "Olivier MF Martin"
+  author: "Olivier MF Martin"
+  favicon: "/favicon.ico"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/omfmartin"
+    - name: linkedin
+      url: "https://linkedin.com/in/omfmartin"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=GZ-cq-gAAAAJ"
+
+  defaultTheme: dark # dark, light, auto
+  disableThemeToggle: false
+  displayFullLangName: true
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  ShowShareButtons: false
+
+  assets:
+    favicon: "/favicon.ico"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: [ "title", "permalink", "summary", "content" ]
+
+taxonomies:
+  tag: tags
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+services:
+  googleAnalytics:
+    ID: "G-PKR8VY4E8L"

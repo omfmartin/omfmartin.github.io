@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Olivier MF Martin</title>
+    <link>https://omfmartin.com/</link>
+    <description>Recent content on Olivier MF Martin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://omfmartin.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding and Mitigating LLM Hallucinations</title>
+      <link>https://omfmartin.com/posts/2024-03-24-llm-hallucination/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://omfmartin.com/posts/2024-03-24-llm-hallucination/</guid>
+      <description>How can we detect and mitigate hallucinations for safer LLM deployment?</description>
+    </item>
+    <item>
+      <title>A Quick Guide to Explainable AI</title>
+      <link>https://omfmartin.com/posts/2024-02-18-explainable-ai/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://omfmartin.com/posts/2024-02-18-explainable-ai/</guid>
+      <description>Opening AI&amp;rsquo;s black box to understand how algorithms reason and foster trust.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://omfmartin.com/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://omfmartin.com/about-me/</guid>
+      <description>I am a senior data scientist specializing in healthcare at NTT DATA in Barcelona. I currently focus on developing predictive analytics modules for a clinical trials platform. Additionally, I have implemented a machine learning-powered dashboard to help social care workers anticipate institucionalization in elderly individuals. I also participated in the SmartNation AI Hackathon in Belgium, focusing on structuring free-text clinical data using large language models.
+My journey into data science began in an unconventional way.</description>
+    </item>
+  </channel>
+</rss>

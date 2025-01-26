@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Olivier MF Martin</title>
+    <link>https://omfmartin.com/es/posts/</link>
+    <description>Recent content in Posts on Olivier MF Martin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://omfmartin.com/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entender y Mitigar las Alucinaciones de los LLMs</title>
+      <link>https://omfmartin.com/es/posts/2024-03-24-llm-hallucination/</link>
+      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://omfmartin.com/es/posts/2024-03-24-llm-hallucination/</guid>
+      <description>¿Cómo podemos detectar y mitigar las alucinaciones para un despliegue más seguro de los LLMs?</description>
+    </item>
+    <item>
+      <title>Una Guía Rápida sobre la IA Explicable</title>
+      <link>https://omfmartin.com/es/posts/2024-02-18-explainable-ai/</link>
+      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://omfmartin.com/es/posts/2024-02-18-explainable-ai/</guid>
+      <description>Abriendo la caja negra de la IA para entender cómo razonan los algoritmos y fomentar la confianza.</description>
+    </item>
+  </channel>
+</rss>
