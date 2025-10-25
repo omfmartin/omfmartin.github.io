@@ -1,8 +1,7 @@
 baseURL: https://omfmartin.com
 title: Olivier MF Martin
-description: Olivier MF Martin 
+description: Olivier MF Martin
 theme: PaperMod
-paginate: 10
 
 defaultContentLanguage: en
 
@@ -23,23 +22,27 @@ outputs:
     - RSS
     - JSON
 
+pagination:
+  pagerSize: 10
+
 languages:
   en:
     contentDir: content/en
     languageName: English
     weight: 1
     DateFormat: "January 2, 2006"
-    profileMode:
-      enabled: true
-      title: "Olivier MF Martin"
-      subtitle: "Data Scientist"
-      imageUrl: "cat.jpeg"
-      imageTitle: "profile picture"
-      imageWidth: 120
-      imageHeight: 120
-      buttons:
-        - name: About Me
-          url: "/about-me"   
+    params:
+      profileMode:
+        enabled: true
+        title: "Olivier MF Martin"
+        subtitle: "Data Scientist"
+        imageUrl: "cat.jpeg"
+        imageTitle: "profile picture"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: About Me
+            url: "/about-me"
     menu:
       main:
         - identifier: about
@@ -55,17 +58,18 @@ languages:
     languageName: Español
     weight: 2
     DateFormat: "02/01/2006"
-    profileMode:
-      enabled: true
-      title: "Olivier MF Martin"
-      subtitle: "Científico de Datos"
-      imageUrl: "cat.jpeg"
-      imageTitle: "profile picture"
-      imageWidth: 120
-      imageHeight: 120
-      buttons:
-        - name: Sobre Mí
-          url: "/es/sobre-mi"
+    params:
+      profileMode:
+        enabled: true
+        title: "Olivier MF Martin"
+        subtitle: "Científico de Datos"
+        imageUrl: "cat.jpeg"
+        imageTitle: "profile picture"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: Sobre Mí
+            url: "/es/sobre-mi"
     menu:
       main:
         - identifier: about
@@ -78,9 +82,11 @@ languages:
         #   weight: 2
 
 params:
-  description: "Olivier MF Martin"
-  author: "Olivier MF Martin"
-  favicon: "/favicon.ico"
+  profileMode:
+    enabled: true
+    description: "Olivier MF Martin"
+    author: "Olivier MF Martin"
+    favicon: "/favicon.ico"
 
   socialIcons:
     - name: github
@@ -122,11 +128,10 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
-    keys: [ "title", "permalink", "summary", "content" ]
+    keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
   tag: tags
-
 
 markup:
   goldmark:

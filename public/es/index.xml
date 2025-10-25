@@ -2,18 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Olivier MF Martin</title>
-    <link>https://omfmartin.com/es/</link>
+    <link>http://localhost:1313/es/</link>
     <description>Recent content on Olivier MF Martin</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>es</language>
-    <atom:link href="https://omfmartin.com/es/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sobre Mi</title>
-      <link>https://omfmartin.com/es/sobre-mi/</link>
+      <link>http://localhost:1313/es/sobre-mi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://omfmartin.com/es/sobre-mi/</guid>
-      <description>Soy científico de datos en Edpuzzle, una empresa que crea herramientas de aprendizaje interactivas que permiten transformar cualquier video en una lección.
-Mi camino hacia la ciencia de datos comenzó de manera poco convencional. Inicialmente estudiando para ser farmacéutico, mi curiosidad me llevó hacia la bioinformática estructural, estadística y desarrollo de software. Este interés finalmente me condujo a realizar un doctorado en Bioinformática. Durante mi doctorado, exploré el impacto del envejecimiento en la expresión genética, empleando técnicas como análisis de grafos, modelado bayesiano de series temporales, aprendizaje automático y modelos lineales generalizados.</description>
+      <guid>http://localhost:1313/es/sobre-mi/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/moi.jpg&#34; alt=&#34;Una foto de Olivier&#34; id=&#34;img-moi&#34;&gt;
+&lt;p&gt;Soy científico de datos en &lt;a href=&#34;https://edpuzzle.com/&#34;&gt;Edpuzzle&lt;/a&gt;, una empresa que crea herramientas de aprendizaje interactivas que permiten transformar cualquier video en una lección.&lt;/p&gt;
+&lt;p&gt;Mi camino hacia la ciencia de datos comenzó de manera poco convencional. Inicialmente estudiando para ser farmacéutico, mi curiosidad me llevó hacia la &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0162143&#34;&gt;bioinformática estructural&lt;/a&gt;, &lt;a href=&#34;https://cran.r-project.org/web/packages/zebu/vignettes/zebu.html&#34;&gt;estadística y desarrollo de software&lt;/a&gt;. Este interés finalmente me condujo a realizar un &lt;a href=&#34;http://hdl.handle.net/10803/674113&#34;&gt;doctorado en Bioinformática&lt;/a&gt;. Durante mi doctorado, exploré el &lt;a href=&#34;https://doi.org/10.1016/j.cell.2024.05.050&#34;&gt;impacto del envejecimiento en la expresión genética&lt;/a&gt;, empleando técnicas como análisis de grafos, modelado bayesiano de series temporales, aprendizaje automático y modelos lineales generalizados.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
