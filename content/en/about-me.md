@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-layoyt: "single"
+layout: "single"
 url: "/about-me"
 ShowShareButtons: false
 ShowToc: false
@@ -9,13 +9,17 @@ ShowReadingTime: false
 
 <img src="/moi.jpg" alt="A photo of Olivier" id="img-moi">
 
-I am a senior data scientist specializing in healthcare at NTT DATA in Barcelona. I developed predictive analytics modules for a [clinical trials platform](https://es.nttdata.com/newsfolder/ntt-data-facilita-la-puesta-en-marcha-de-innovatrial). Additionally, I have implemented a [machine learning-powered dashboard to help social care workers anticipate institucionalization in elderly individuals](https://socinfodigital.es/wp-content/uploads/2024/01/20230116_DocumentoBiok_Premios_SoCinfo-1OK.pdf). I also participated in the [SmartNation AI Hackathon in Belgium](https://www.lespecialiste.be/fr/actualites/e-health/smartnation-ai-hackathon-place-aux-solutions-pour-la-sante.html), focusing on structuring free-text clinical data using large language models.
+I am a Data Scientist at [Edpuzzle](https://edpuzzle.com/), a company that creates interactive learning tools to help educators transform any video into a lesson.
 
-My journey into data science began in an unconventional way. Initially studying to become a pharmacist, my curiosity steered me toward [structural bioinformatics](https://doi.org/10.1371/journal.pone.0162143), [statistics, and software development](https://cran.r-project.org/web/packages/zebu/vignettes/zebu.html). This shift ultimately led me to pursue a [Ph.D. in bioinformatics](http://hdl.handle.net/10803/674113). Throughout my doctoral work, I explored the impact of aging on the transcriptome of _Caenorhabditis elegans_, employing various techniques such as graph analysis, bayesian time-series modeling, machine learning, and generalized linear models.
+My journey into data science began in an unconventional way. Initially studying to become a pharmacist, my curiosity led me towards [structural bioinformatics](https://doi.org/10.1371/journal.pone.0162143), [statistics, and software development](https://cran.r-project.org/web/packages/zebu/vignettes/zebu.html). This interest ultimately led me to pursue a [Ph.D. in bioinformatics](http://hdl.handle.net/10803/674113). During my doctoral work, I explored the [impact of aging on gene expression](https://doi.org/10.1016/j.cell.2024.05.050), employing techniques such as graph analysis, Bayesian time-series modeling, machine learning, and generalized linear models.
 
-During my career, I also applied machine learning to predict adverse chemotherapy responses utilizing genetic markers, performed [kinetic metabolic modeling](https://doi.org/10.1016/j.ijpara.2024.03.005), and carried out [pharmacokinetics simulations](https://doi.org/10.1111/fcp.12156).
+After my Ph.D., I joined NTT DATA in Barcelona as a Data Scientist focused on healthcare applications. There, I worked on [predicting chronic kidney disease progression](https://www.lne.es/asturias/2025/05/22/cuelebre-gran-almacen-datos-sanitarios-117679429.html), building predictive analytics modules for a [clinical trials platform](https://es.nttdata.com/newsfolder/ntt-data-facilita-la-puesta-en-marcha-de-innovatrial), and helping [anticipate institutionalization in elderly individuals](https://socinfodigital.es/wp-content/uploads/2024/01/20230116_DocumentoBiok_Premios_SoCinfo-1OK.pdf).
 
-Aside from my professional pursuits, I have a passion for languages. I am fluent in French, Portuguese, English, Spanish, and Catalan, and can also hold a conversation in [Occitan](https://en.wikipedia.org/wiki/Occitan_language) and Russian.
+In addition, I’ve applied machine learning to predict adverse chemotherapy responses using genetic markers, conducted [kinetic metabolic modeling](https://doi.org/10.1016/j.ijpara.2024.03.005), and performed [pharmacokinetics simulations](https://doi.org/10.1111/fcp.12156).
+
+In addition to my professional work, I have a passion for languages. I am fluent in French, Portuguese, English, Spanish, and Catalan, and can also hold conversations in [Occitan](https://en.wikipedia.org/wiki/Occitan_language) and Russian.
+
+---
 
 ### Software
 
@@ -25,7 +29,11 @@ Aside from my professional pursuits, I have a passion for languages. I am fluent
 
 - [`isotela`](https://github.com/omfmartin/isotela): R package for normalizing and differentially analyzing single-individual RNA-seq data while accounting for tissue size differences. Requires spike-ins.
 
-- [`poete-mécanique`](https://github.com/omfmartin/poete-mecanique): Reads a random poem aloud when the Raspberry Pi motion sensor detects movement.
+- [`wpbd`](https://github.com/omfmartin/wpbd): Transforms Wiktionary data into a PocketBook compatible dictionnary.
+
+- [`poète-mécanique`](https://github.com/omfmartin/poete-mecanique): Reads a random poem aloud when the Raspberry Pi motion sensor detects movement.
+
+---
 
 ### Peer-reviewed Publications
 

@@ -1,6 +1,6 @@
 ---
 title: "Sobre Mi"
-layoyt: "single"
+layout: "single"
 url: "/es/sobre-mi"
 ShowShareButtons: false
 ShowToc: false
@@ -9,13 +9,18 @@ ShowReadingTime: false
 
 <img src="/moi.jpg" alt="Una foto de Olivier" id="img-moi">
 
-Soy un científico de datos senior especializado en el sector de la salud en NTT DATA en Barcelona. He trabajo en el desarrollo de módulos de análisis predictivo para una [plataforma de ensayos clínicos](https://es.nttdata.com/newsfolder/ntt-data-facilita-la-puesta-en-marcha-de-innovatrial). Además, he implementado un [_dashboard_ con aprendizaje automático para ayudar a los trabajadores sociales a anticipar la institucionalización en personas mayores](https://socinfodigital.es/wp-content/uploads/2024/01/20230116_DocumentoBiok_Premios_SoCinfo-1OK.pdf). También participé en el [Hackathon de IA SmartNation en Bélgica](https://www.lespecialiste.be/fr/actualites/e-health/smartnation-ai-hackathon-place-aux-solutions-pour-la-sante.html), centrándome en la estructuración de datos clínicos de texto libre utilizando _large language models_.
+Soy científico de datos en [Edpuzzle](https://edpuzzle.com/), una empresa que crea herramientas de aprendizaje interactivas que permiten transformar cualquier video en una lección.
 
-Mi camino hacia la ciencia de datos comenzó de una manera poco convencional. Inicialmente estudiando para ser farmacéutico, mi curiosidad me llevó hacia la [bioinformática estructural](https://doi.org/10.1371/journal.pone.0162143), [la estadística y el desarrollo de software](https://cran.r-project.org/web/packages/zebu/vignettes/zebu.html). Este cambio me llevó a realizar un [Doctorado en Bioinformática](http://hdl.handle.net/10803/674113). A lo largo de mi trabajo doctoral, exploré el impacto del envejecimiento en el transcriptoma de _Caenorhabditis elegans_, empleando varias técnicas como análisis de grafos, modelado de series temporales bayesianas, aprendizaje automático y modelos lineales generalizados.
+Mi camino hacia la ciencia de datos comenzó de manera poco convencional. Inicialmente estudiando para ser farmacéutico, mi curiosidad me llevó hacia la [bioinformática estructural](https://doi.org/10.1371/journal.pone.0162143), [estadística y desarrollo de software](https://cran.r-project.org/web/packages/zebu/vignettes/zebu.html). Este interés finalmente me condujo a realizar un [doctorado en Bioinformática](http://hdl.handle.net/10803/674113). Durante mi doctorado, exploré el [impacto del envejecimiento en la expresión genética](https://doi.org/10.1016/j.cell.2024.05.050), empleando técnicas como análisis de grafos, modelado bayesiano de series temporales, aprendizaje automático y modelos lineales generalizados.
 
-Durante mi carrera, también apliqué aprendizaje automático para predecir respuestas adversas a la quimioterapia utilizando marcadores genéticos, realicé [modelado metabólico cinético](https://doi.org/10.1016/j.ijpara.2024.03.005) y llevé a cabo [simulaciones de farmacocinética](https://doi.org/10.1111/fcp.12156).
+Tras mi doctorado, me uní a NTT DATA en Barcelona como científico de datos centrado en aplicaciones sanitarias. Allí trabajé en [predicción de la progresión de la enfermedad renal crónica](https://www.lne.es/asturias/2025/05/22/cuelebre-gran-almacen-datos-sanitarios-117679429.html), desarrollé módulos de análisis predictivo para una [plataforma de ensayos clínicos](https://es.nttdata.com/newsfolder/ntt-data-facilita-la-puesta-en-marcha-de-innovatrial), y ayudé [a los trabajadores sociales a anticipar la institucionalización en personas mayores](https://socinfodigital.es/wp-content/uploads/2024/01/20230116_DocumentoBiok_Premios_SoCinfo-1OK.pdf).
 
-Aparte de mis objetivos profesionales, tengo una pasión por los idiomas. Hablo con fluidez francés, portugués, inglés, español y catalán, y también puedo mantener una conversación en [occitano](https://es.wikipedia.org/wiki/Idioma_occitano) y ruso.
+Además, he aplicado aprendizaje automático para predecir respuestas adversas a la quimioterapia usando marcadores genéticos, realizado [modelado metabólico cinético](https://doi.org/10.1016/j.ijpara.2024.03.005) y llevado a cabo [simulaciones de farmacocinética](https://doi.org/10.1111/fcp.12156).
+
+Fuera de mi trabajo profesional, tengo una gran pasión por los idiomas. Hablo con fluidez francés, portugués, inglés, español y catalán, y también puedo mantener conversaciones en [occitano](https://es.wikipedia.org/wiki/Idioma_occitano) y ruso.
+
+---
+
 
 ### Software
 
@@ -25,7 +30,11 @@ Aparte de mis objetivos profesionales, tengo una pasión por los idiomas. Hablo 
 
 - [`isotela`](https://github.com/omfmartin/isotela): Paquete de R para la normalización y análisis diferencial de datos de RNA-seq de individuos únicos, teniendo en cuenta las diferencias en el tamaño del tejido. Requiere de spike-ins.
 
+- [`wpbd`](https://github.com/omfmartin/wpbd): Transforma los datos del Wiktionary en un diccionario compatible con PocketBook.
+
 - [`poète-mécanique`](https://github.com/omfmartin/poete-mecanique): Lee un poema al azar en voz alta cuando el sensor de movimiento de Raspberry Pi detecta movimiento.
+
+---
 
 ### Publicaciones revisadas por pares
 

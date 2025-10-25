@@ -6,29 +6,14 @@
     <description>Recent content on Olivier MF Martin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 24 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://omfmartin.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Understanding and Mitigating LLM Hallucinations</title>
-      <link>https://omfmartin.com/posts/2024-03-24-llm-hallucination/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://omfmartin.com/posts/2024-03-24-llm-hallucination/</guid>
-      <description>How can we detect and mitigate hallucinations for safer LLM deployment?</description>
-    </item>
-    <item>
-      <title>A Quick Guide to Explainable AI</title>
-      <link>https://omfmartin.com/posts/2024-02-18-explainable-ai/</link>
-      <pubDate>Sun, 18 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://omfmartin.com/posts/2024-02-18-explainable-ai/</guid>
-      <description>Opening AI&amp;rsquo;s black box to understand how algorithms reason and foster trust.</description>
-    </item>
     <item>
       <title>About Me</title>
       <link>https://omfmartin.com/about-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://omfmartin.com/about-me/</guid>
-      <description>I am a senior data scientist specializing in healthcare at NTT DATA in Barcelona. I currently focus on developing predictive analytics modules for a clinical trials platform. Additionally, I have implemented a machine learning-powered dashboard to help social care workers anticipate institucionalization in elderly individuals. I also participated in the SmartNation AI Hackathon in Belgium, focusing on structuring free-text clinical data using large language models.
-My journey into data science began in an unconventional way.</description>
+      <description>I am a Data Scientist at Edpuzzle, a company that creates interactive learning tools to help educators transform any video into a lesson.
+My journey into data science began in an unconventional way. Initially studying to become a pharmacist, my curiosity led me towards structural bioinformatics, statistics, and software development. This interest ultimately led me to pursue a Ph.D. in bioinformatics. During my doctoral work, I explored the impact of aging on gene expression, employing techniques such as graph analysis, Bayesian time-series modeling, machine learning, and generalized linear models.</description>
     </item>
   </channel>
 </rss>

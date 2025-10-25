@@ -32,7 +32,7 @@ languages:
     profileMode:
       enabled: true
       title: "Olivier MF Martin"
-      subtitle: "Data Scientist | Bioinformatian"
+      subtitle: "Data Scientist"
       imageUrl: "cat.jpeg"
       imageTitle: "profile picture"
       imageWidth: 120
@@ -58,7 +58,7 @@ languages:
     profileMode:
       enabled: true
       title: "Olivier MF Martin"
-      subtitle: "Científico de Datos | Bioinformático"
+      subtitle: "Científico de Datos"
       imageUrl: "cat.jpeg"
       imageTitle: "profile picture"
       imageWidth: 120

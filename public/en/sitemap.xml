@@ -2,58 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://omfmartin.com/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://omfmartin.com/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://omfmartin.com/"
-                />
-  </url><url>
-    <loc>https://omfmartin.com/posts/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://omfmartin.com/es/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://omfmartin.com/posts/"
-                />
-  </url><url>
-    <loc>https://omfmartin.com/posts/2024-03-24-llm-hallucination/</loc>
-    <lastmod>2024-03-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://omfmartin.com/es/posts/2024-03-24-llm-hallucination/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://omfmartin.com/posts/2024-03-24-llm-hallucination/"
-                />
-  </url><url>
-    <loc>https://omfmartin.com/posts/2024-02-18-explainable-ai/</loc>
-    <lastmod>2024-02-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://omfmartin.com/es/posts/2024-02-18-explainable-ai/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://omfmartin.com/posts/2024-02-18-explainable-ai/"
-                />
-  </url><url>
     <loc>https://omfmartin.com/about-me/</loc>
     <xhtml:link
                 rel="alternate"
@@ -64,6 +12,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://omfmartin.com/about-me/"
+                />
+  </url><url>
+    <loc>https://omfmartin.com/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://omfmartin.com/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://omfmartin.com/"
                 />
   </url><url>
     <loc>https://omfmartin.com/search/</loc>
